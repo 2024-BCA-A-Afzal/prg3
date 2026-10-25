@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even Program</title>
+</head>
+<body>
+    <h1>Odd or Even Using Arrow Function</h1>
+    <p id="result"></p>
+
+    <script>
+        const checkEvenOdd = (num) => {
+            if (num % 2 === 0) {
+                return num + " is Even";
+            } else {
+                return num + " is Odd";
+            }
+        };
+
+        document.getElementById("result").innerHTML =
+            checkEvenOdd(10) + "<br>" + checkEvenOdd(7);
+    </script>
+</body>
+</html>
